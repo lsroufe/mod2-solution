@@ -1,0 +1,113 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  text-align: center;
+  margin: 25px;
+}
+
+p {
+  text-align: left;
+  display: inline-block;
+
+}
+
+.row {
+  text-align: center;
+}
+
+.menuitem {
+  border: 1px solid black;
+  background-color: gray;
+  display: inline-block;
+}
+
+.chicken {
+  border: 1px solid black;
+  background-color: #d59799;
+  width: 50%;
+  float: right;
+  clear: left;
+}
+
+.beef {
+  border: 1px solid black;
+  background-color: #c24145;
+  width: 50%;
+  float: right;
+  clear: left;
+}
+
+.sushi {
+  border: 1px solid black;
+  background-color: #e4d19b;
+  width: 50%;
+  float: right;
+  clear: left;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .menuitem {
+    width: 30%;
+    margin: 10px;
+  }
+
+  p {
+    margin: 5px;
+    padding: 10px;
+    width: 95%
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .menuitem {
+    height: 150px;
+    margin: 5px;
+    overflow: auto;
+  }
+
+  #chicken.menuitem {
+    width: 45%;
+    margin-right: 5px;
+ }
+  #beef.menuitem {
+    width: 45%;
+    margin-left: 5px;
+
+  }
+  #sushi.menuitem {
+    width: 92%;
+
+ }
+  .sushi {
+    width: 25%;
+  }
+
+  p {
+    margin: 5px;
+    padding: 10px;
+    width: 95%
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 768px) {
+  .menuitem {
+    width: 95%;
+    margin: 10px;
+  }
+
+  p {
+    margin: 0, auto;
+    padding: 10px;
+    width: 95%
+  }
+}
