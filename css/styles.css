@@ -31,28 +31,23 @@ p {
   font-size: 125%;
 }
 
-.chicken {
+.fooditem {
   border: 1px solid black;
-  background-color: #d59799;
   width: 50%;
   float: right;
   clear: left;
+}
+
+.chicken {
+  background-color: #d59799;
 }
 
 .beef {
-  border: 1px solid black;
   background-color: #c24145;
-  width: 50%;
-  float: right;
-  clear: left;
 }
 
 .sushi {
-  border: 1px solid black;
   background-color: #e4d19b;
-  width: 50%;
-  float: right;
-  clear: left;
 }
 
 
@@ -78,16 +73,16 @@ p {
     overflow: auto;
   }
 
-  #chicken.menuitem {
+  .menuitem.item-chicken {
     width: 45%;
     margin-right: 5px;
  }
-  #beef.menuitem {
+  .menuitem.item-beef {
     width: 45%;
     margin-left: 5px;
 
   }
-  #sushi.menuitem {
+  .menuitem.item-chicken {
     width: 92%;
 
  }
@@ -103,7 +98,7 @@ p {
 }
 
 /********** Small devices only **********/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .menuitem {
     width: 95%;
     margin: 10px;
